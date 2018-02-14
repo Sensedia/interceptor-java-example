@@ -11,7 +11,7 @@
 		<dependency>
 			<groupId>com.sensedia</groupId>
 			<artifactId>api-interceptor-java-spec</artifactId>
-			<version>2.0.1</version>
+			<version>1801.5.0.0</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>

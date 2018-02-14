@@ -33,7 +33,7 @@ public class ExampleClass {
 	@InterceptorMethod
 	public void verifyHeader(ApiCallData apiCallData) {
 
-		String headerValue = apiCallData.contextVariables.get("header");
+		String headerValue = (String) apiCallData.contextVariables.get("header");
 
 		if (apiCallData.request.getHeader("x-id") == null) {
 			apiCallData.decision.setAccept(false);
@@ -51,7 +51,7 @@ public class ExampleClass {
 
 		if (apiCallData.app != null && apiCallData.app.code.equals("ObKYeKn6atWH")) {
 
-			String destination = apiCallData.contextVariables.get("destination");
+			String destination = (String) apiCallData.contextVariables.get("destination");
 
 			apiCallData.setDestinationUri(new URI(destination));
 		}
